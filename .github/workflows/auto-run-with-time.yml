@@ -1,0 +1,16 @@
+name: auto-run-with-time
+
+run-name: ${{ github.actor }} learning setup auto run with time in GitHub Actions
+
+on:
+  schedule:
+    - cron: '20 18 * * *'
+    
+  check_run:
+    types: [completed]
+    
+jobs:
+  auto-run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Now is 1:20 am"
