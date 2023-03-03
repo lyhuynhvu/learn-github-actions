@@ -5,9 +5,7 @@ run-name: ${{ github.actor }} learning setup auto run with time in GitHub Action
 on:
   schedule:
     - cron: '20 18 * * *'
-    
-  check_run:
-    types: [completed]
+  push:
     
 jobs:
   auto-run:
