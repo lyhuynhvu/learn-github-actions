@@ -4,7 +4,7 @@ on:
   push:
   
 jobs:
-  check-bats-version:
+  check-workflow:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello!"
