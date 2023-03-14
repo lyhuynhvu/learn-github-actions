@@ -4,7 +4,5 @@ on:
   push:
     branches:
       - master
-
-jobs:
-  call-workflow:
-    uses: ./.github/workflows/auto-run-with-time.yml
+  
+  workflow_call:
