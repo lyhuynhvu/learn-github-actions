@@ -4,7 +4,7 @@ run-name: ${{ github.actor }} learning setup auto run with time in GitHub Action
 
 on:
   schedule:
-    - cron: '30 15 * * *'
+    - cron: '30 3 * * *'
     
 jobs:
   auto-run:
