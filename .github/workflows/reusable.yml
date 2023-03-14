@@ -1,10 +1,10 @@
 name: reusable workflow
 
 on:
-  pull_request:
+  push:
     branches:
       - master
 
 jobs:
-  call_workflow:
+  call-workflow:
     uses: ./.github/workflows/auto-run-with-time.yml
