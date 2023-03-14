@@ -4,12 +4,14 @@ run-name: ${{ github.actor }} learning setup auto run with time in GitHub Action
 
 on:
   schedule:
-    - cron: '30 6 * * *'
-  workflow_call:
+    - cron: '0 7 * * *'
     
 jobs:
   auto-run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Now is 1:30 pm Vietnam time"
+      - run: echo "Now is 2:00 pm Vietnam time"
       - run: echo "Good morning!"
+      
+  call-workflow:
+    uses: ./.github/workflows/reusable.yml
