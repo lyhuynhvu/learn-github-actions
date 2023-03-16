@@ -34,7 +34,7 @@ jobs:
     outputs:
       ci: ${{ steps.conditional.outputs.ci }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3 
 
       - id: conditional
         uses: ./.github/actions/conditional
