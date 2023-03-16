@@ -1,14 +1,10 @@
 name: reusable workflow
 
 on:
-  push:
-    branches:
-      - master
-      
   workflow_call:
 
 jobs:
-  repush:
+  callback-the-schedule:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "repush every day"
+      - run: echo "callback the schedule workflow"
