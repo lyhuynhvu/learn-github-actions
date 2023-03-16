@@ -10,7 +10,6 @@ jobs:
   auto-run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Now is 2:00 pm Vietnam time"
       - run: echo "Good morning!"
       
   call-workflow:
